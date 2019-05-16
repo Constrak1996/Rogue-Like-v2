@@ -7,7 +7,9 @@ namespace Template
 {
     public class Enemy : GameObject
     {
-        public Enemy(string spriteName, Transform Transform) : base(spriteName, Transform)
+        public int damage;
+
+        public Enemy(string spriteName, Transform Transform, int damage) : base(spriteName, Transform)
         {
         }
     }

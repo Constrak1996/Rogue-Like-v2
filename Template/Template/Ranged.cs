@@ -7,7 +7,7 @@ namespace Template
 {
     public class RangedEnemy : Enemy
     {
-        public RangedEnemy(string spriteName, Transform Transform) : base(spriteName, Transform)
+        public RangedEnemy(string spriteName, Transform Transform, int damage) : base(spriteName, Transform, damage)
         {
         }
     }

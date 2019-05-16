@@ -28,6 +28,9 @@ namespace Template
 
         Player player;
 
+        //Collision
+        private Texture2D collisionTexture;
+
         public GameWorld()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -58,8 +61,14 @@ namespace Template
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //Collisionbox texture
+            collisionTexture = Content.Load<Texture2D>("OnePixel");
+
+            //Player
             player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
             gameObjectsAdd.Add(player);
+            
+            
         }
 
         /// <summary>
@@ -96,6 +105,9 @@ namespace Template
                 }
                 gameObjectsAdd.Clear();
             }
+
+            PlayerMovement(3);
+
             base.Update(gameTime);
         }
 
@@ -115,9 +127,58 @@ namespace Template
                 go.Draw(spriteBatch);
             }
 
+            //Collision texture draw
+                foreach (GameObject go in gameObjects)
+                {
+                    go.Draw(spriteBatch);
+#if DEBUG
+                    DrawCollisionBox(go);
+#endif
+                }
+
             spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        /// <summary>
+        /// DrawCollisionBox draws a line around the given texture, used for debugging any collision issues
+        /// </summary>
+        /// <param name="go"></param>
+        public void DrawCollisionBox(GameObject go)
+        {
+            //Creating a box around the object
+            Rectangle collisionBox = go.Hitbox;
+
+            Rectangle topLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height, collisionBox.Width, 1);
+            Rectangle bottomLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height / 30, collisionBox.Width, 1);
+            Rectangle rightLine = new Rectangle(collisionBox.Center.X + collisionBox.Width / 30, collisionBox.Center.Y - collisionBox.Height, 1, collisionBox.Height);
+            Rectangle leftLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height , 1, collisionBox.Height);
+
+            spriteBatch.Draw(collisionTexture, topLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
+            spriteBatch.Draw(collisionTexture, bottomLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
+            spriteBatch.Draw(collisionTexture, rightLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
+            spriteBatch.Draw(collisionTexture, leftLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
+        }
+
+        public void PlayerMovement(int speed)
+        {
+            if (Keyboard.GetState().IsKeyDown(Keys.W))
+            {
+                player.Transform.Position.Y -= 1 * speed;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                player.Transform.Position.X -= 1 * speed;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.S))
+            {
+                player.Transform.Position.Y += 1 * speed;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                player.Transform.Position.X += 1 * speed;
+            }
         }
     }
 }
