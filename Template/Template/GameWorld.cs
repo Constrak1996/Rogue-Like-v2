@@ -22,10 +22,13 @@ namespace Template
         public static List<GameObject> gameObjectsAdd = new List<GameObject>();
         public static List<GameObject> gameObjectsRemove = new List<GameObject>();
 
+        Player player;
+
         public GameWorld()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            _content = Content;
         }
 
         /// <summary>
@@ -47,6 +50,9 @@ namespace Template
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
+            gameObjectsAdd.Add(player);
         }
 
         /// <summary>
