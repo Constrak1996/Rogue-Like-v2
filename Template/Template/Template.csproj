@@ -47,8 +47,8 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GameWorld.cs" />
-    <Compile Include="Level1.cs" />
-    <Compile Include="Level2.cs" />
+    <Compile Include="Content\Levels\Level1.cs" />
+    <Compile Include="Content\Levels\Level2.cs" />
     <Compile Include="Melee.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
