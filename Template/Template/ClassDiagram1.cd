@@ -3,7 +3,7 @@
   <Class Name="Template.GameWorld">
     <Position X="7.25" Y="0.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAQAEEAgAAAABwABAAAAAAAAAAAAAAhAQAAAAAAAAAQ=</HashCode>
+      <HashCode>AAQBEEAgBAAABwABAAAAAMAAAAAAAAhBQAAAAAACABQ=</HashCode>
       <FileName>GameWorld.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -31,36 +31,36 @@
   <Class Name="Template.Component">
     <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Component.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.State">
     <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAACAAAAAAAgBBAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>State.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.Level1">
     <Position X="12.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Level1.cs</FileName>
+      <HashCode>AAQAEQAABAAAAiAQAABAAEAAAQBAABAACAQAAAACEAA=</HashCode>
+      <FileName>Content\Levels\Level1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.Shop">
     <Position X="12.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Shopo.cs</FileName>
+      <HashCode>AAQAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.Level2">
     <Position X="12.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Level2.cs</FileName>
+      <HashCode>AAQAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Content\Levels\Level2.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.MeleeEnemy">
@@ -75,6 +75,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ranged.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Template.Button">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAQAAAgAoAAAAAAAAAAKgACAAAAQACAAAAgA=</HashCode>
+      <FileName>Button.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Template.Transform">

@@ -1,19 +1,18 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Template
 {
-    public class Level1 : State
+    public class Level2 : State
     {
         private SpriteFont Font;
         private Texture2D _playerTexture;
         
-
         private List<Component> _component;
         //Tilemap of Lake Map
         private int[,] map = new int[,]
@@ -77,17 +76,17 @@ namespace Template
             get { return map.GetLength(4); }
         }
 
-        public Level1(GameWorld gameWorld, GraphicsDevice graphicsDevice, ContentManager content) : base(gameWorld,graphicsDevice,content)
+        public Level2(GameWorld gameWorld, GraphicsDevice graphicsDevice, ContentManager content) : base(gameWorld, graphicsDevice, content)
         {
-            var buttonTexture = content.Load<Texture2D>("Button");
-            var buttonFont = content.Load<SpriteFont>("Font");
+            var buttonTexture = _content.Load<Texture2D>("Button");
+            var buttonFont = _content.Load<SpriteFont>("Font");
             Font = content.Load<SpriteFont>("Font");
             Texture2D piller = content.Load<Texture2D>("Pillar1");
             Texture2D wall = content.Load<Texture2D>("Wall");
             Texture2D ground = content.Load<Texture2D>("Ground");
             Texture2D DoorFront = content.Load<Texture2D>("DoorFront1");
             Texture2D Shop = content.Load<Texture2D>("Shop");
-            _playerTexture = content.Load<Texture2D>("Fisher_Bob");
+            
 
 
 
@@ -114,8 +113,9 @@ namespace Template
 
         private void Shop_Click(object sender, EventArgs e)
         {
-            _gameWorld.ChangeState(new Shop(_gameWorld, _graphichsDevice,_content));
+            _gameWorld.ChangeState(new Shop(_gameWorld, _graphichsDevice, _content));
         }
+        
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
@@ -129,13 +129,13 @@ namespace Template
                         continue;
                     }
                     Texture2D texture = tileTextures[textureIndex];
-                    spriteBatch.Draw(texture, new Rectangle(x * 64, y * 64, 64, 64), Color.White);
+                    spritebatch.Draw(texture, new Rectangle(x * 64, y * 64, 64, 64), Color.White);
                 }
 
             }
             foreach (var component in _component)
             {
-                component.Draw(gameTime, spriteBatch);
+                component.Draw(gameTime, spritebatch);
             }
         }
 
@@ -146,10 +146,7 @@ namespace Template
 
         public override void Update(GameTime gameTime)
         {
-            foreach (var component in _component)
-            {
-                component.Update(gameTime);
-            }
+            
         }
     }
 }

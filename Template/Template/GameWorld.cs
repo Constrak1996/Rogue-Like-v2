@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 
 namespace Template
@@ -13,6 +14,10 @@ namespace Template
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        private TimeSpan timeSinceStart;
+        private State _currentState;
+        private State _nextState;
+        private float time;
 
         private static ContentManager _content;
         public static ContentManager ContentManager{ get => _content; }
@@ -26,17 +31,18 @@ namespace Template
         public static int Width = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
         public static int Height = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
 
+        public void ChangeState(State state)
+        {
+            _nextState = state;
+        }
         Player player;
-
-        //Collision
-        private Texture2D collisionTexture;
 
         public GameWorld()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             _content = Content;
-
+            IsMouseVisible = true;
             graphics.PreferredBackBufferWidth = Width;
             graphics.PreferredBackBufferHeight = Height;
         }
@@ -60,15 +66,9 @@ namespace Template
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            //Collisionbox texture
-            collisionTexture = Content.Load<Texture2D>("OnePixel");
-
-            //Player
+            _currentState = new Level1(this, GraphicsDevice, Content);
             player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
             gameObjectsAdd.Add(player);
-            
-            
         }
 
         /// <summary>
@@ -90,6 +90,16 @@ namespace Template
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            if (_nextState != null)
+            {
+                _currentState = _nextState;
+                _nextState = null;
+            }
+            _currentState.Update(gameTime);
+            _currentState.PostUpdate(gameTime);
+
+            timeSinceStart += gameTime.ElapsedGameTime;
+            time = (int)timeSinceStart.Seconds;
             //Updates gameobjects
             foreach (GameObject go in gameObjects)
             {
@@ -105,9 +115,6 @@ namespace Template
                 }
                 gameObjectsAdd.Clear();
             }
-
-            PlayerMovement(3);
-
             base.Update(gameTime);
         }
 
@@ -120,65 +127,16 @@ namespace Template
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
+            _currentState.Draw(gameTime, spriteBatch);
             //Draws sprites in gameObjects list
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);
             }
 
-            //Collision texture draw
-                foreach (GameObject go in gameObjects)
-                {
-                    go.Draw(spriteBatch);
-#if DEBUG
-                    DrawCollisionBox(go);
-#endif
-                }
-
             spriteBatch.End();
 
             base.Draw(gameTime);
-        }
-
-        /// <summary>
-        /// DrawCollisionBox draws a line around the given texture, used for debugging any collision issues
-        /// </summary>
-        /// <param name="go"></param>
-        public void DrawCollisionBox(GameObject go)
-        {
-            //Creating a box around the object
-            Rectangle collisionBox = go.Hitbox;
-
-            Rectangle topLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height, collisionBox.Width, 1);
-            Rectangle bottomLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height / 30, collisionBox.Width, 1);
-            Rectangle rightLine = new Rectangle(collisionBox.Center.X + collisionBox.Width / 30, collisionBox.Center.Y - collisionBox.Height, 1, collisionBox.Height);
-            Rectangle leftLine = new Rectangle(collisionBox.Center.X - collisionBox.Width, collisionBox.Center.Y - collisionBox.Height , 1, collisionBox.Height);
-
-            spriteBatch.Draw(collisionTexture, topLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
-            spriteBatch.Draw(collisionTexture, bottomLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
-            spriteBatch.Draw(collisionTexture, rightLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
-            spriteBatch.Draw(collisionTexture, leftLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
-        }
-
-        public void PlayerMovement(int speed)
-        {
-            if (Keyboard.GetState().IsKeyDown(Keys.W))
-            {
-                player.Transform.Position.Y -= 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.A))
-            {
-                player.Transform.Position.X -= 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.S))
-            {
-                player.Transform.Position.Y += 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.D))
-            {
-                player.Transform.Position.X += 1 * speed;
-            }
         }
     }
 }

@@ -8,15 +8,15 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Template
 {
-    public class Level2 : State
+    public class Shop : State
     {
-        public Level2(GameWorld gameWorld, GraphicsDevice graphicsDevice, ContentManager content) : base(gameWorld, graphicsDevice, content)
+        public Shop(GameWorld gameWorld, GraphicsDevice graphicsDevice, ContentManager content) : base(gameWorld, graphicsDevice, content)
         {
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-           
+            
         }
 
         public override void PostUpdate(GameTime gameTime)
