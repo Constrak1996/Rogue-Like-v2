@@ -15,9 +15,11 @@
     <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Pillar.png</File>
     <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Pillar1.png</File>
     <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Shop.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/textFont.spritefont</File>
     <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Wall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -197,3 +197,4 @@ C:\Users\Kristoffer\Desktop\DataBaseProject\Rogue-Like-v2\Template\Template\obj\
 C:\Users\Kristoffer\Desktop\DataBaseProject\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
 C:\Users\Kristoffer\Desktop\DataBaseProject\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.exe
 C:\Users\Kristoffer\Desktop\DataBaseProject\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.pdb
+C:\Users\Kristoffer\Desktop\DataBaseProject\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\textFont.xnb
