@@ -21,3 +21,26 @@ D:\OneDrive\OneDrive - IT Center Nord\Visual Studio Projects\Template - MonoGame
 D:\OneDrive\OneDrive - IT Center Nord\Visual Studio Projects\Template - MonoGame\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
 D:\OneDrive\OneDrive - IT Center Nord\Visual Studio Projects\Template - MonoGame\Template\Template\obj\x86\Debug\Template.exe
 D:\OneDrive\OneDrive - IT Center Nord\Visual Studio Projects\Template - MonoGame\Template\Template\obj\x86\Debug\Template.pdb
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Template.exe
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Template.pdb
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csprojAssemblyReference.cache
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.exe
+D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.pdb

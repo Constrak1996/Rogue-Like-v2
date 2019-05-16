@@ -81,7 +81,6 @@ namespace Template
                 }
                 gameObjectsAdd.Clear();
             }
-
             base.Update(gameTime);
         }
 
