@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Wall.png</SourceFile>
-  <SourceTime>2019-05-08T12:01:35.5037977+02:00</SourceTime>
-  <DestFile>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/bin/Windows/Content/Wall.xnb</DestFile>
-  <DestTime>2019-05-16T11:09:39.3585751+02:00</DestTime>
+  <SourceFile>C:/Users/Kristoffer/source/repos/Constrak1996/Rogue-Like-v2/Template/Template/Content/Wall.png</SourceFile>
+  <SourceTime>2019-05-16T11:25:53.1525971+02:00</SourceTime>
+  <DestFile>C:/Users/Kristoffer/source/repos/Constrak1996/Rogue-Like-v2/Template/Template/Content/bin/Windows/Content/Wall.xnb</DestFile>
+  <DestTime>2019-05-16T11:26:28.9340658+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

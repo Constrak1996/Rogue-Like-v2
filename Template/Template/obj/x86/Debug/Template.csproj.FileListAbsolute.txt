@@ -98,3 +98,14 @@ D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Pillar1.xnb
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Shop.xnb
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Wall.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Button.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\DoorFront.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\DoorFront1.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Fisher_Bob.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Font.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\ground.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\OnePixel.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Pillar.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Pillar1.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Shop.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Wall.xnb
