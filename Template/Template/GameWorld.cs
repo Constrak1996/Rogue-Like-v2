@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 
 namespace Template
@@ -13,6 +14,10 @@ namespace Template
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        private TimeSpan timeSinceStart;
+        private State _currentState;
+        private State _nextState;
+        private float time;
 
         private static ContentManager _content;
         public static ContentManager ContentManager{ get => _content; }
@@ -26,6 +31,10 @@ namespace Template
         public static int Width = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
         public static int Height = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
 
+        public void ChangeState(State state)
+        {
+            _nextState = state;
+        }
         Player player;
 
         public GameWorld()
@@ -33,7 +42,7 @@ namespace Template
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             _content = Content;
-
+            IsMouseVisible = true;
             graphics.PreferredBackBufferWidth = Width;
             graphics.PreferredBackBufferHeight = Height;
         }
@@ -57,7 +66,7 @@ namespace Template
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            _currentState = new Level1(this, GraphicsDevice, Content);
             player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
             gameObjectsAdd.Add(player);
         }
@@ -81,6 +90,16 @@ namespace Template
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            if (_nextState != null)
+            {
+                _currentState = _nextState;
+                _nextState = null;
+            }
+            _currentState.Update(gameTime);
+            _currentState.PostUpdate(gameTime);
+
+            timeSinceStart += gameTime.ElapsedGameTime;
+            time = (int)timeSinceStart.Seconds;
             //Updates gameobjects
             foreach (GameObject go in gameObjects)
             {
@@ -108,7 +127,7 @@ namespace Template
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
+            _currentState.Draw(gameTime, spriteBatch);
             //Draws sprites in gameObjects list
             foreach (GameObject go in gameObjects)
             {
