@@ -3,7 +3,7 @@
   <Class Name="Template.GameWorld">
     <Position X="7.25" Y="0.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAQAEEAgAAAABwABAAAAAAAAAAAAAAhAQAAAAAAAAAQ=</HashCode>
+      <HashCode>AAQAEEAgAAAADwABAAAAAAQAAAAAAAhBQAAAAAAAAAQ=</HashCode>
       <FileName>GameWorld.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -53,7 +53,7 @@
     <Position X="12.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Shopo.cs</FileName>
+      <FileName>Shop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Template.Level2">

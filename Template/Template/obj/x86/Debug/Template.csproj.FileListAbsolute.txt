@@ -77,3 +77,5 @@ C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bi
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\EntityFramework.SqlServer.xml
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.xml
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.dll.config
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Fisher_Bob.xnb
+C:\Users\Kristoffer\source\repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Content\Font.xnb

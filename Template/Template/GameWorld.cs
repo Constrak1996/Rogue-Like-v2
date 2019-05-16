@@ -13,6 +13,9 @@ namespace Template
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D playerTexture;
+        Transform Transform;
+        Player player;
 
         private static ContentManager _content;
         public static ContentManager ContentManager{ get => _content; }
@@ -47,6 +50,8 @@ namespace Template
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            playerTexture = Content.Load<Texture2D>("Fisher_Bob");
+            
         }
 
         /// <summary>
@@ -93,7 +98,7 @@ namespace Template
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
+            
             //Draws sprites in gameObjects list
             foreach (GameObject go in gameObjects)
             {
