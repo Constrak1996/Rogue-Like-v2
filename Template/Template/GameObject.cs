@@ -47,7 +47,7 @@ namespace Template
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-
+            
         }
     }
     

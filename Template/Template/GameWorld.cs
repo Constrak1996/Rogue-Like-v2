@@ -51,7 +51,7 @@ namespace Template
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
+            player = new Player("Fisher_Bob", new Transform(new Vector2(0, 0), 0));
             gameObjectsAdd.Add(player);
         }
 
