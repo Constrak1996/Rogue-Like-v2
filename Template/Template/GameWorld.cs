@@ -22,6 +22,10 @@ namespace Template
         public static List<GameObject> gameObjectsAdd = new List<GameObject>();
         public static List<GameObject> gameObjectsRemove = new List<GameObject>();
 
+        //Graphics
+        public static int Width = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+        public static int Height = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+
         Player player;
 
         public GameWorld()
@@ -29,6 +33,9 @@ namespace Template
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             _content = Content;
+
+            graphics.PreferredBackBufferWidth = Width;
+            graphics.PreferredBackBufferHeight = Height;
         }
 
         /// <summary>
@@ -51,7 +58,7 @@ namespace Template
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            player = new Player("Fisher_Bob", new Transform(new Vector2(0, 0), 0));
+            player = new Player("Fisher_Bob", new Transform(new Vector2(400, 50), 0));
             gameObjectsAdd.Add(player);
         }
 
