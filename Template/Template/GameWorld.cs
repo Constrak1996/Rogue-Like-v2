@@ -68,11 +68,13 @@ namespace Template
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            //Updates gameobjects
             foreach (GameObject go in gameObjects)
             {
                 go.Update();
             }
 
+            //Adds gameobjects to the gameobjects list
             if (gameObjectsAdd.Count > 0)
             {
                 for (int i = 0; i < gameObjectsAdd.Count; i++)
