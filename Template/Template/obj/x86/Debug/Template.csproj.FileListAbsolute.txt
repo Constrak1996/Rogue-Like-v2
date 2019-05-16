@@ -67,3 +67,13 @@ C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\ob
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.exe
 C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.pdb
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Template.exe.config
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\EntityFramework.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\EntityFramework.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\System.Data.SQLite.dll.config
