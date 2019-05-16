@@ -44,3 +44,26 @@ D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.exe
 D:\Visual Studio Projects\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.pdb
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Template.exe
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\Template.pdb
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csprojAssemblyReference.cache
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CoreCompileInputs.cache
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.csproj.CopyComplete
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.exe
+C:\Users\Kristoffer\Source\Repos\Constrak1996\Rogue-Like-v2\Template\Template\obj\x86\Debug\Template.pdb
