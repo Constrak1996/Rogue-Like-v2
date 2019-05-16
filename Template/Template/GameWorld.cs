@@ -14,10 +14,12 @@ namespace Template
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont Font;
         private TimeSpan timeSinceStart;
         private State _currentState;
         private State _nextState;
         private float time;
+        
 
         private static ContentManager _content;
         public static ContentManager ContentManager{ get => _content; }
@@ -69,8 +71,8 @@ namespace Template
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            _currentState = new Level1(this, GraphicsDevice, Content);
-
+            _currentState = new Menu(this, GraphicsDevice, Content);
+            Font = Content.Load<SpriteFont>("Font");
             //Collisionbox texture
             collisionTexture = Content.Load<Texture2D>("OnePixel");
 
@@ -95,8 +97,8 @@ namespace Template
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            //    Exit();
 
             if (_nextState != null)
             {
@@ -125,7 +127,7 @@ namespace Template
             }
 
             //Player movement
-            PlayerMovement(3);
+            player.PlayerMovement(3);
 
             base.Update(gameTime);
         }
@@ -154,7 +156,7 @@ namespace Template
                 DrawCollisionBox(go);
 #endif
             }
-
+            spriteBatch.DrawString(Font, $"Player Name: {player.Name} Health: {Player.health} Damage: {Player.damage}", new Vector2(0, 20), Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -178,24 +180,6 @@ namespace Template
             spriteBatch.Draw(collisionTexture, leftLine, null, Color.Red, 0, Vector2.Zero, SpriteEffects.None, 1);
         }
 
-        public void PlayerMovement(int speed)
-        {
-            if (Keyboard.GetState().IsKeyDown(Keys.W))
-            {
-                player.Transform.Position.Y -= 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.A))
-            {
-                player.Transform.Position.X -= 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.S))
-            {
-                player.Transform.Position.Y += 1 * speed;
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.D))
-            {
-                player.Transform.Position.X += 1 * speed;
-            }
-        }
+       
     }
 }

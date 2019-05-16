@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -146,6 +147,10 @@ namespace Template
 
         public override void Update(GameTime gameTime)
         {
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                _gameWorld.ChangeState(new Menu(_gameWorld, _graphichsDevice, _content));
+            }
             foreach (var component in _component)
             {
                 component.Update(gameTime);

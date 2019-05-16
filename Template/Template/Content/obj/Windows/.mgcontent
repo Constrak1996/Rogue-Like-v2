@@ -4,20 +4,22 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Button.jpg</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/DoorFront.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/DoorFront1.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Fisher_Bob.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Font.spritefont</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/ground.jpg</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Ground.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/OnePixel.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Pillar.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Pillar1.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Shop.png</File>
-    <File>D:/Visual Studio Projects/Rogue-Like-v2/Template/Template/Content/Wall.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Button.jpg</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/DoorFront.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/DoorFront1.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Fisher_Bob.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Font.spritefont</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/ground.jpg</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Ground.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/OnePixel.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Pillar.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Pillar1.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Shop.png</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/textFont.spritefont</File>
+    <File>C:/Users/Kristoffer/Desktop/DataBaseProject/Rogue-Like-v2/Template/Template/Content/Wall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
