@@ -47,7 +47,7 @@ namespace Template
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            
+            spriteBatch.Draw(Sprite, new Vector2(Transform.Position.X, Transform.Position.Y - 1), null, Color.White, 0f, spriteCenter, 1f, SpriteEffects.None, 1f);
         }
     }
     
